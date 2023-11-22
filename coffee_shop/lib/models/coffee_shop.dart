@@ -6,7 +6,7 @@ class CoffeeShop extends ChangeNotifier {
   final List<Coffee> _shop = [
     //black coffee
     Coffee(
-        name: "Long Black", price: "4.10", imagePath: "lib/images/blacl.png"),
+        name: "Long Black", price: "4.10", imagePath: "lib/images/black1.png"),
     //latte
     Coffee(name: "Latte", price: "4.20", imagePath: "lib/images/latte.png"),
     //expresso
@@ -16,7 +16,7 @@ class CoffeeShop extends ChangeNotifier {
     Coffee(
         name: "Iced Coffee",
         price: "4.40",
-        imagePath: "lib/images/iced_coffee.png"),
+        imagePath: "lib/images/iced-latte.png"),
   ];
 
   //user cart
@@ -24,7 +24,7 @@ class CoffeeShop extends ChangeNotifier {
   //get coffee list
   List<Coffee> get coffeeShop => _shop;
   //get user cart
-  List<Coffee> get useCart => _userCart;
+  List<Coffee> get userCart => _userCart;
   //add item to cart
   void addItemToCart(Coffee coffee) {
     _userCart.add(coffee);
